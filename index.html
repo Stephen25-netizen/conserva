@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conserva Tech Hub - Innovate Efficiently</title>
+    <meta name="description" content="Conserva Tech Hub Ltd is a Kenya-based technology company delivering smart, scalable digital solutions including EDMS, Call Centers, and IT Consulting.">
+    <meta name="keywords" content="Conserva Tech Hub, Tech Company Kenya, EDMS, Call Center, IT Consulting, ArchivaFlow, Digital Transformation">
+    <meta property="og:title" content="Conserva Tech Hub - Innovate Efficiently">
+    <meta property="og:description" content="Empowering organizations to solve core challenges without complexity, bloat, or wasted spend.">
+    <meta name="twitter:title" content="Conserva Tech Hub - Innovate Efficiently">
+    <meta name="twitter:description" content="Empowering organizations to solve core challenges without complexity, bloat, or wasted spend.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #0f172a; /* Deep Slate Blue */
+            --secondary-color: #0ea5e9; /* Light Ocean Blue */
+            --accent-color: #f59e0b; /* Amber */
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--primary-color);
+        }
+    }
+
+    @layer utilities {
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+            animation: float 4s ease-in-out 1.5s infinite;
+        }
+        .animate-float-slow {
+            animation: float 5s ease-in-out 0.5s infinite;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--secondary-color)] text-white font-medium rounded-md hover:bg-blue-600 transition-colors shadow-sm;
+        }
+        .btn-outline {
+            @apply px-6 py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] font-medium rounded-md hover:bg-[var(--primary-color)] hover:text-white transition-colors;
+        }
+        .section-padding {
+            @apply py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Solutions.js"></script>
+    <script type="text/babel" src="components/SuccessStories.js"></script>
+    <script type="text/babel" src="components/CTA.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
